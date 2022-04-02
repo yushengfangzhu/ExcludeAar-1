@@ -1,4 +1,13 @@
 # 用于过滤aar中冲突类(class)和so库的脚本,也可以用来过滤jar中冲突class
+Forked From  https://github.com/Siy-Wu/ExcludeAar
+因为已经做了一下修改,想要使用原作者的可以跳转过去看说明:下方也是未作修改的,这里看也可以
+1.修改部分so库删除加进去了,虽然作者说支持so库删除,但是脚本没加,这里给加上了 2.新增了正则方便过滤大量的类名统计
+关于第二点正则直接获取冲突class列表:![change_before](https://user-images.githubusercontent.com/17971243/161378001-8bdd22d2-bc35-45c8-b917-d06dd906e0a5.png)
+![changing](https://user-images.githubusercontent.com/17971243/161377966-f8413f27-a563-4222-8dfa-3a315dc73812.png)
+) ![change_after](https://user-images.githubusercontent.com/17971243/161378006-ce6a3a1e-8e61-46c2-84e5-c4c74611e752.png)
+这样得到的大量的class名称可以直接copy进参数,不用手动复制粘贴了
+
+
 ## Jcenter地址
 依赖：
 ```grdle
